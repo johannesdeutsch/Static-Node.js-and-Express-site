@@ -2,13 +2,40 @@ extends layout.pug
 
 block content
 
+doctype html
+html(lang='en' dir='ltr')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible' content='ie=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Portfolio Site
+    link(href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,800' rel='stylesheet')
+    link(rel='stylesheet' href='../public/css/normalize.css')
+    link(rel='stylesheet' href='../public/css/styles.css')
+  body
+    #my-info.sidebar
+      .sidebar-info-box
+        br
+        .thumbnail-box
+          img.thumbnail(src='https://placehold.it/550x350' alt='Profile Pic')
+        .dev-intro-box
+          h5 Josh Sullivan
+          p
+            | Lorem ipsum dolor amet in ad trust fund dolore pickled. Godard taiyaki bitters chartreuse artisan sriracha. Synth minim flannel godard small batch, woke craft beer af kogi sriracha. Cornhole portland esse YOLO fixie.
+          a(href='about.html') Learn More →
+    .wrapper
+      .header
+        .header-info-box
+          button#menu-icon.menu-icon(type='button' data-toggle='my-info')
+          span Josh Sullivan
+
   article.portfolio-intro
 
     //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
-    h1 My Portfolio
+    h1 My Works
 
     //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
-    p Portfolio description
+    p Welcome to my current coding portfolio, which consists of five projects I worked on during my studies at Treehouse. All were done on my own with guidance from the community following lessons at the school.
 
 
   article.portfolio-project-thumbs
@@ -26,3 +53,12 @@ block content
             img.thumbnail(src='https://placehold.it/550x550', alt='')
             h5 My Site
 
+
+      each project in projects
+        .cell
+          a(href=`${projects.id}`)
+            img.thumbnail(src=`${projects.image_urls[0]}`, alt=`Thumbnail ${projects.project_name}`)
+            h5(title=`${projects.project_name}`)
+
+
+    script(src='../public/js/script.js')
