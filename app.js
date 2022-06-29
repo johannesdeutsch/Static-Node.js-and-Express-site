@@ -1,14 +1,19 @@
+<<<<<<< HEAD
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+=======
+const express = require('express');
+>>>>>>> parent of d3449bd (loop, projects folder)
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var app = express();
 
+<<<<<<< HEAD
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -37,3 +42,20 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+=======
+app.get('/', (req, res) => {
+    res.render('index');
+    
+});
+
+app.get('/about', (req, res) => {
+    res.render('about');
+    
+});
+
+
+app.listen(3000, () => {
+    console.log('The application is running on localhost:3000!');
+
+});
+>>>>>>> parent of d3449bd (loop, projects folder)
