@@ -6,6 +6,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 =======
 const express = require('express');
+<<<<<<< HEAD
+>>>>>>> parent of d3449bd (loop, projects folder)
+=======
 >>>>>>> parent of d3449bd (loop, projects folder)
 
 var indexRouter = require('./routes/index');
@@ -13,6 +16,7 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -43,6 +47,8 @@ app.use(function(err, req, res, next) {
 
 module.exports = app;
 =======
+=======
+>>>>>>> parent of d3449bd (loop, projects folder)
 app.get('/', (req, res) => {
     res.render('index');
     
