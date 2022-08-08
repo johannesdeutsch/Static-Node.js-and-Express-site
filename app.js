@@ -1,8 +1,9 @@
 const express = require('express');
-const { data } = require('data.json');
+const { projects } = require('../data.json');
 
 const app = express();
 
+// tells express to use pug
 app.set('view engine', 'pug');
 
 

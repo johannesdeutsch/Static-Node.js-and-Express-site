@@ -8,10 +8,12 @@
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "express": "^4.15.2",
+    "express": "^4.18.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "pkg": "^5.8.0",
+    "pug": "^3.0.2"
   },
   "description": "Project 6 Treehouse Techdegree",
   "main": "app.js",
@@ -20,7 +22,7 @@
     "url": "git+https://github.com/johannesdeutsch/Project-6-Static-Node.js-and-Express-site.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Johannes Deutsch",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/johannesdeutsch/Project-6-Static-Node.js-and-Express-site/issues"
