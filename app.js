@@ -10,14 +10,6 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 
-app.use((req, res, next) => {
-    console.log('One');
-    const err = new Error('Unfortunately this site doesn´t exist');
-    err.status = 500;
-    next(err);
-});
-
-
 app.get('/', (req, res) => {
     res.render('index');
     res.locals = data.projects;
@@ -40,6 +32,9 @@ app.post('/projects/:id', (req, res, next) => {
 app.use((req, res, next) => {
     const err = new Error('Not Found');
     err.status = 404;
+    err.message = 'Sorry! The page does not exist unfortunately.'
+    console.log(err.message);
+    console.log(err.status);
     next(err);
 });
 
