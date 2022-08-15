@@ -10,8 +10,7 @@ app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
     res.render('index');
-    const dataProjects = data.projects;
-    res.locals.dataProjects = req.dataProjects;
+    res.locals = data.projects;
 });
 
 app.get('/about', (req, res) => {
@@ -43,7 +42,7 @@ app.use((req, res, next) => {
 });
 
 
-// code snippet from https://stackoverflow.com/questions/49210127/getting-rangeerror-err-http-invalid-status-code-invalid-status-code-undefine
+
 
 app.use((err, req, res, next) => {
     if(err.status !== 404) {
