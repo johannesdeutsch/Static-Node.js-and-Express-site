@@ -6,7 +6,7 @@
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://johannesdeutsch.github.io/a_random_quote_generator-v1/a_random_quote_generator-v1/",
             "github_link": "https://github.com/johannesdeutsch/a_random_quote_generator-v1/tree/main/a_random_quote_generator-v1", 
-            "image_urls": ["public/images/Random-Quote-Generator_main.jpg", "public/images/Random-Quote-Generator_landscape_1.jgp", "public/images/Random-Quote-Generator_landscape_2.jpg", "public/images/Random-Quote-Generator_landscape_3.jpg"]
+            "image_urls": ["/public/images/Random-Quote-Generator_main.jpg", "/public/images/Random-Quote-Generator_landscape_1.jgp", "/public/images/Random-Quote-Generator_landscape_2.jpg", "/public/images/Random-Quote-Generator_landscape_3.jpg"]
         }, 
 
         {
@@ -16,7 +16,7 @@
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://johannesdeutsch.github.io/Data-Pagination-and-Filtering-v2/",
             "github_link": "https://github.com/johannesdeutsch/Data-Pagination-and-Filtering-v2", 
-            "image_urls": ["public/images/Data-Pagination-and-Filtering_main.jpg", "public/images/Data-Pagination-and-Filtering_landscape_1.jpg", "public/images/Data-Pagination-and-Filtering_landscape_2.jpg"]
+            "image_urls": ["/public/images/Data-Pagination-and-Filtering_main.jpg", "/public/images/Data-Pagination-and-Filtering_landscape_1.jpg", "/public/images/Data-Pagination-and-Filtering_landscape_2.jpg"]
         },
 
         {
@@ -26,7 +26,7 @@
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://johannesdeutsch.github.io/Interactive-Form/",
             "github_link": "https://github.com/johannesdeutsch/Interactive-Form", 
-            "image_urls": ["public/images/Interactive-Form_main.jpg", "public/images/Interactive-Form_landscape_1.jpg", "public/images/Interactive-Form_landscape_2.jpg", "public/images/Interactive-Form_landscape_3.jpg"]
+            "image_urls": ["/public/images/Interactive-Form_main.jpg", "/public/images/Interactive-Form_landscape_1.jpg", "/public/images/Interactive-Form_landscape_2.jpg", "/public/images/Interactive-Form_landscape_3.jpg"]
         },
 
         {
@@ -36,7 +36,7 @@
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://johannesdeutsch.github.io/OOP-Game-Show-App/",
             "github_link": "https://github.com/johannesdeutsch/OOP-Game-Show-App", 
-            "image_urls": ["public/images/OOP-Game-Show-App_main.jpg", "public/images/OOP-Game-Show-App_landscape_1.jpg", "public/images/OOP-Game-Show-App_landscape_2.jpg", "public/images/OOP-Game-Show-App_landscape_3.jpg"]
+            "image_urls": ["/public/images/OOP-Game-Show-App_main.jpg", "/public/images/OOP-Game-Show-App_landscape_1.jpg", "/public/images/OOP-Game-Show-App_landscape_2.jpg", "/public/images/OOP-Game-Show-App_landscape_3.jpg"]
         },
 
         {
@@ -46,7 +46,7 @@
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://johannesdeutsch.github.io/Project-5-Public-API-Requests/student-files/",
             "github_link": "https://github.com/johannesdeutsch/Project-5-Public-API-Requests", 
-            "image_urls": ["public/images/Public-API-Requests_main.jpg", "public/images/Public-API-Requests_landscape_1.jpg", "public/images/Public-API-Requests_landscape_2.jpg", "public/images/Public-API-Requests_landscape_3.jpg"]
+            "image_urls": ["/public/images/Public-API-Requests_main.jpg", "/public/images/Public-API-Requests_landscape_1.jpg", "/public/images/Public-API-Requests_landscape_2.jpg", "/public/images/Public-API-Requests_landscape_3.jpg"]
         }
     ] 
 }
