@@ -8,28 +8,30 @@ app.use('/static', express.static('public'));
 app.set('view engine', 'pug');
 
 
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
     res.render('index', { projects });
+    next();
 });
 
-app.get('/about', (req, res) => {
+app.get('/views/about', (req, res, next) => {
     res.render('about');
-    
+    next();
 });
 
 
-app.post('/data/:id', (req, res, next) => {
+app.post('/data/data/:projects/:project/:id', (req, res, next) => {
     const project = data[req.params.id];
     if (project) {
         res.render('project', {
         project});
     } 
+    next();
 }); 
 
 
 
 
-
+//404 error handler
 
 app.use((req, res, next) => {
     const err = new Error('Not Found');
@@ -41,7 +43,7 @@ app.use((req, res, next) => {
 });
 
 
-
+//global error handler
 
 app.use((err, req, res, next) => {
     if(err.status === 404) {

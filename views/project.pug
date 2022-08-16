@@ -31,15 +31,15 @@ block content
               li JavaScript
 
         //- Add the href values to the links below
-        a.btn-link(href=`/projects/${project.live_link}`) Live Demo
-        a.btn-link(href=`/projects/${project.github_link}`) GitHub Repo
+        a.btn-link(href=`./projects/${project.live_link}`) Live Demo
+        a.btn-link(href=`./projects/${project.github_link}`) GitHub Repo
 
     .project-img-box.box
 
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes
-      img.project-img(src=`${project.image_urls[1]}`, alt=`${project.description}`)
-      img.project-img(src=`${project.image_urls[2]}`, alt=`${project.description}`)
-      img.project-img(src=`${project.image_urls[3]}`, alt=`${project.description}`)
+      img.project-img(src=`/${project.image_urls[1]}`, alt=`${project.description}`)
+      img.project-img(src=`/${project.image_urls[2]}`, alt=`${project.description}`)
+      img.project-img(src=`/${project.image_urls[3]}`, alt=`${project.description}`)
 
     nav.nav
       a(href='/')
