@@ -33,7 +33,7 @@ app.post('/data/:id', (req, res, next) => {
 
 app.use((req, res, next) => {
     const err = new Error('Not Found');
-    res.status = 404;
+    res.status(404);
     res.message = 'Sorry! The page does not exist unfortunately.'
     console.log(err.message);
     console.log(err.status);
@@ -44,8 +44,10 @@ app.use((req, res, next) => {
 
 
 app.use((err, req, res, next) => {
-    if(err.status !== 404) {
-        err.message = err.message || 'Oops!! I looks lie something went wrong';
+    if(err.status === 404) {
+        res.status(404);
+    } else {
+        err.message = err.message || 'Oops!! Sorry, there is probably an issue with the server';
         res.status(err.status || 500);
     }
     console.log(err.message);

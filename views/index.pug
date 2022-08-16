@@ -23,6 +23,6 @@ block content
 
         .cell
           a(href='/views/project.pug')
-            img.thumbnail(src=`${project.image_urls[1]}`, alt=`${project.descriptions}`)
-            h5 `/projects/${project_name}`
+            img.thumbnail(src=`${project.image_urls[0]}`, alt=`${project.description}`)
+            h5 #{project.project_name}
 
