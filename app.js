@@ -19,13 +19,19 @@ app.get('/views/about', (req, res, next) => {
 });
 
 
-app.post('/data/data/:projects/:project/:id', (req, res, next) => {
-    const project = data[req.params.id];
+app.get('/projects/:id', (req, res, next) => {
+    const projectId = req.params.id;
+    const project = projects.find(({id}) => id === +projectId);
     if (project) {
         res.render('project', {
         project});
-    } 
-    next();
+    } else {
+        const err = new Error();
+        res.status(404);
+        res.message = 'Sorry, this page does not exist unfortunately.'
+        console.log(err.message);
+        next(err);
+    }
 }); 
 
 
