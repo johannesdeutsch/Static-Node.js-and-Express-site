@@ -28,29 +28,22 @@ app.get('/views/about', (req, res, next) => {
 // project route
 
 app.get('/projects/:id', (req, res, next) => {
-    const projectId = req.params.id;
-    const project = projects.find(({id}) => id === +projectId);
-    if (project) {
-        res.render('project', {
-        project});
+    if (projects[req.params.id]) {
+        res.render('project', {project: projects[req.params.id]
+        });
     } else {
-        const err = new Error();
-        res.status(404);
-        res.message = 'Sorry, this page does not exist unfortunately.'
-        console.log(err.message);
-        next(err);
+        next();
     }
-}); 
+})
 
 
 //404 error handler
 
 app.use((req, res, next) => {
     const err = new Error('Not Found');
-    res.status(404);
-    res.message = 'Sorry! The page does not exist unfortunately.'
-    console.log(err.message);
-    console.log(err.status);
+    res.status = 404;
+    err.message = 'Sorry! The page does not exist unfortunately.'
+    console.error(err.message, err);
     next(err);
 });
 
@@ -64,8 +57,8 @@ app.use((err, req, res, next) => {
         err.message = err.message || 'Oops!! Sorry, there is probably an issue with the server';
         res.status(err.status || 500);
     }
-    console.log(err.message);
-    console.log(err.status);
+    console.log(err.message, err);
+    next(err);
 });
 
 app.listen(3000, () => {

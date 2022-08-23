@@ -6,7 +6,7 @@
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://johannesdeutsch.github.io/a_random_quote_generator-v1/a_random_quote_generator-v1/",
             "github_link": "https://github.com/johannesdeutsch/a_random_quote_generator-v1/tree/main/a_random_quote_generator-v1", 
-            "image_urls": ["/static/images/Random-Quote-Generator_main.jpg", "/static/images/Random-Quote-Generator_landscape_1.jgp", "/static/images/Random-Quote-Generator_landscape_2.jpg", "/static/images/Random-Quote-Generator_landscape_3.jpg"]
+            "image_urls": ["/static/images/Random-Quote-Generator_main.jpg", "/static/images/Random-Quote-Generator_landscape_1.jpg", "/static/images/Random-Quote-Generator_landscape_2.jpg", "/static/images/Random-Quote-Generator_landscape_3.jpg"]
         }, 
 
         {
@@ -16,7 +16,7 @@
             "technologies": ["JavaScript", "CSS", "HTML"],
             "live_link": "https://johannesdeutsch.github.io/Data-Pagination-and-Filtering-v2/",
             "github_link": "https://github.com/johannesdeutsch/Data-Pagination-and-Filtering-v2", 
-            "image_urls": ["/static/images/Data-Pagination-and-Filtering_main.jpg", "/static/images/Data-Pagination-and-Filtering_landscape_1.jpg", "/static/images/Data-Pagination-and-Filtering_landscape_2.jpg"]
+            "image_urls": ["/static/images/Data-Pagination-and-Filtering_main.jpg", "/static/images/Data-Pagination-and-filtering_landscape_1.jpg", "/static/images/Data-Pagination-and-filtering_landscape_2.jpg", "/static/images/Data-Pagination-and-filtering_landscape_3.jpg"]
         },
 
         {
