@@ -1,8 +1,11 @@
+//set up express
+
 const express = require('express');
 const { projects } = require('./data/data.json');
 
 const app = express();
 
+//puclic folder as a static folder
 app.use('/static', express.static('public'));
 
 // tells express to use pug
@@ -63,6 +66,7 @@ app.use((err, req, res, next) => {
     }
 });
 
+// listen on port 3000
 app.listen(3000, () => {
     console.log('The application is running on localhost:3000!');
 });
