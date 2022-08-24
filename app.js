@@ -14,17 +14,15 @@ app.set('view engine', 'pug');
 
 //index route
 
-app.get('/', (req, res, next) => {
+app.get('/', (req, res) => {
     res.render('index', { projects });
-    next();
 });
 
 
 // about route
 
-app.get('/views/about', (req, res, next) => {
+app.get('/about', (req, res) => {
     res.render('about');
-    next();
 });
 
 
