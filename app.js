@@ -61,7 +61,6 @@ app.use((err, req, res, next) => {
     console.log(err.message);
     console.log(res.status);
     }
- 
 });
 
 app.listen(3000, () => {
