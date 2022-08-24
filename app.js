@@ -41,9 +41,10 @@ app.get('/projects/:id', (req, res, next) => {
 
 app.use((req, res, next) => {
     const err = new Error('Not Found');
-    res.status = 404;
+    err.status = 404;
     err.message = 'Sorry! The page does not exist unfortunately.'
-    console.error(err.message, err);
+    console.error(err.message);
+    console.error(err.status);
     next(err);
 });
 
@@ -51,14 +52,16 @@ app.use((req, res, next) => {
 //global error handler
 
 app.use((err, req, res, next) => {
-    if(err.status === 404) {
-        res.status(404);
+    if (err.status === 404) {
+    res.status(404);
+    console.log(err.message);
     } else {
-        err.message = err.message || 'Oops!! Sorry, there is probably an issue with the server';
-        res.status(err.status || 500);
+    res.status(err.status || 500);
+    err.message = err.message || "Oops! There seems to be an issue, we will try to fix it.";
+    console.log(err.message);
+    console.log(res.status);
     }
-    console.log(err.message, err);
-    next(err);
+ 
 });
 
 app.listen(3000, () => {
